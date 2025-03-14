@@ -1,0 +1,16 @@
+# VSCode settings
+.vscode/
+
+# ESP-IDF build directories
+build/
+idf_build/
+
+# Log files
+*.log
+
+# Windows system files
+Thumbs.db
+desktop.ini
+
+# MacOS system files (optional)
+.DS_Store
