@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/diane/dev/GamePrym/PoolMonitor/build/CMakeFiles/bootloader
+/Users/diane/dev/GamePrym/PoolMonitor/build/CMakeFiles/bootloader.rule
+/Users/diane/dev/GamePrym/PoolMonitor/build/CMakeFiles/bootloader-complete.rule
+/Users/diane/dev/GamePrym/PoolMonitor/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/diane/dev/GamePrym/PoolMonitor/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/diane/dev/GamePrym/PoolMonitor/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/diane/dev/GamePrym/PoolMonitor/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/diane/dev/GamePrym/PoolMonitor/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/diane/dev/GamePrym/PoolMonitor/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/diane/dev/GamePrym/PoolMonitor/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
