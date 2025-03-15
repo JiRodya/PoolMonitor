@@ -7,8 +7,7 @@
 // Add the necessary include paths
 #include "sys/reent.h"
 
-//drivers include
-#include "test.h"
+
 
 // Logger tag for debugging
 static const char* TAG = "MAIN";

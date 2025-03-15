@@ -111,6 +111,7 @@ private:
      * @param pin The GPIO pin used for the OneWire bus.
      */
     explicit OneWireBus(gpio_num_t pin);
+    static constexpr char* TAG = "OneWireBus";  ///< Tag for logging purposes.
 
     /**
      * @brief Destructor (not used, as Singleton instances persist).
