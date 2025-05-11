@@ -10,28 +10,32 @@
 #define ONEWIRE_WITH_PIN(pin,rom_id) (*OneWire::Get(pin,rom_id))
 
 
-class OneWire {
+namespace PM 
+{
+    class OneWire {
 
-public:
-    static OneWire* Get(gpio_num_t pin);
-    static OneWire* Get(gpio_num_t pin, uint64_t rom_id);
+    public:
+        void init();
+        static OneWire* Get(gpio_num_t pin);
+        static OneWire* Get(gpio_num_t pin, uint64_t rom_id);
 
-    gpio_num_t getPin() const;
-    uint64_t getROM() const;
+        gpio_num_t getPin() const;
+        uint64_t getROM() const;
+        bool reset();
+        void writeBit (bool bit);
+        void writeByte(uint8_t byte);
+        uint8_t readBit();
+        uint8_t readByte();
+    private:
+        gpio_num_t _pin;
+        uint64_t _rom = 0;
+        static inline std::vector<OneWire*> _instances = {};
 
-    void writeBit (bool bit);
-    void writeByte(uint8_t byte);
-    uint8_t readBit();
-    uint8_t readByte();
-private:
-    gpio_num_t _pin;
-    uint64_t _rom = 0;
-    static inline std::vector<OneWire*> _instances = {};
+        explicit OneWire(gpio_num_t pin);
+        explicit OneWire(gpio_num_t pin, uint64_t rom_id);
+        ~OneWire();
 
-    OneWire(gpio_num_t pin);   
-    OneWire(gpio_num_t pin, uint64_t rom_id);
-    ~OneWire();
+    };
 
-};
-
-#endif // ONEWIRE_H
+    #endif // ONEWIRE_H
+}
